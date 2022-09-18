@@ -4,11 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/drawable/card_background.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/drawable/ic_hert.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/drawable/ic_home3.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/drawable/ic_share.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/drawable/icon_state.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/font/playfair_display.xml" value="0.1648148148148148" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/action_bar.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/action_bar.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/activity_favourite.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/activity_main.xml" value="0.20677083333333332" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/quotes_data.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/activity_quotes_detail.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/detail_bar.xml" value="0.5" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/layout/quotes_data.xml" value="0.5" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/menu/base_menu.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GetQuotes/app/src/main/res/menu/quotes_detail_menu.xml" value="0.20572916666666666" />
       </map>
     </option>
   </component>
