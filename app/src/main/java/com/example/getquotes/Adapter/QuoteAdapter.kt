@@ -1,7 +1,6 @@
 package com.example.getquotes.Adapter
 
-import android.content.Context
-import android.content.Intent
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.getquotes.Models.Result
 import com.example.getquotes.R
-import com.example.getquotes.UI.QuotesDetail
 
 
 class QuoteAdapter :
@@ -19,13 +17,11 @@ class QuoteAdapter :
     var onItemClick: ((Result) -> Unit)? = null
 
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
         val inflaterView =
             LayoutInflater.from(parent.context).inflate(R.layout.quotes_data, parent, false)
         return CustomViewHolder(inflaterView)
     }
-
 
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
@@ -34,7 +30,7 @@ class QuoteAdapter :
         holder.author.text = items.author
 
         holder.itemView.setOnClickListener {
-           onItemClick?.invoke(items)
+            onItemClick?.invoke(items)
         }
     }
 
@@ -47,11 +43,10 @@ class QuoteAdapter :
         this.quoteList = quoteList
         notifyDataSetChanged()
     }
-   class CustomViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+
+    class CustomViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val quotes: TextView = view.findViewById(R.id.content)
         val author: TextView = view.findViewById(R.id.author)
-
-
 
 
     }

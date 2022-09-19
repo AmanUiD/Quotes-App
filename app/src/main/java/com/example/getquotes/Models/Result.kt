@@ -2,25 +2,27 @@ package com.example.getquotes.Models
 
 import android.os.Parcel
 import android.os.Parcelable
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 
 data class Result(
-//    @PrimaryKey(autoGenerate = true)
 
+    val quoteId: Int,
     val author: String,
     val content: String,
-    val tags: List<String>
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
+        parcel.readInt(),
         parcel.readString()!!,
-        parcel.readString()!!,
-        parcel.createStringArrayList()!!
+        parcel.readString()!!
     ) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeInt(quoteId)
         parcel.writeString(author)
         parcel.writeString(content)
-        parcel.writeStringList(tags)
     }
 
     override fun describeContents(): Int {
@@ -36,4 +38,7 @@ data class Result(
             return arrayOfNulls(size)
         }
     }
+
 }
+
+

@@ -8,8 +8,7 @@ import com.example.getquotes.Repository.QouteRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MainViewModel(private val qouteRepository: QouteRepository): ViewModel() {
-
+class MainViewModel(private val qouteRepository: QouteRepository) : ViewModel() {
 
     init {
 
@@ -17,6 +16,7 @@ class MainViewModel(private val qouteRepository: QouteRepository): ViewModel() {
             qouteRepository.getQuotes()
         }
     }
+
     val quotes: LiveData<QuoteList>
-        get() =qouteRepository.quotes
+        get() = qouteRepository.quotes
 }
